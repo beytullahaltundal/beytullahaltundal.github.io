@@ -1,16 +1,26 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const tabs = document.querySelectorAll(".nav-tabs li");
-  const tabContent = document.querySelectorAll(".tab");
+document.addEventListener("DOMContentLoaded", function() {
+    // Başlık animasyonu
+    let header = document.querySelector("header h1");
+    header.style.opacity = "0";
+    header.style.transform = "translateY(-20px)";
 
-  tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-      // Tüm sekmelerden ve içeriklerden aktif sınıfını kaldır
-      tabs.forEach(item => item.classList.remove("active"));
-      tabContent.forEach(content => content.classList.remove("active"));
-      
-      // Tıklanan sekmeye ve ilgili içeriğe aktif sınıfı ekle
-      tab.classList.add("active");
-      document.getElementById(tab.getAttribute("data-tab")).classList.add("active");
+    setTimeout(() => {
+        header.style.transition = "opacity 1.5s, transform 1.5s";
+        header.style.opacity = "1";
+        header.style.transform = "translateY(0)";
+    }, 500);
+
+    // Resimlere hover efekti ekleme
+    let images = document.querySelectorAll(".content img");
+
+    images.forEach(img => {
+        img.addEventListener("mouseover", () => {
+            img.style.transform = "scale(1.1)";
+            img.style.transition = "transform 0.5s";
+        });
+
+        img.addEventListener("mouseout", () => {
+            img.style.transform = "scale(1)";
+        });
     });
-  });
 });
