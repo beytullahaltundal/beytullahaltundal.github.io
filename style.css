@@ -1,71 +1,41 @@
-/* Genel stil ayarları */
+/* Genel Stil */
 body {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
+    background-color: #0a0a0a;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navigasyon menüsü */
-nav {
-  background-color: #1a1a1a;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+/* Başlık */
+header {
+    background: linear-gradient(to right, #111, #222);
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
 }
 
-.nav-tabs {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+h1 {
+    font-size: 2.5em;
+    color: cyan;
 }
 
-.nav-tabs li {
-  flex: 1;
-  text-align: center;
-  padding: 15px 0;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* İçerik Alanı */
+.content {
+    margin: 50px auto;
+    width: 80%;
 }
 
-.nav-tabs li:hover,
-.nav-tabs li.active {
-  background-color: #333;
+.content img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
 
-/* İçerik alanı */
-.tab-content {
-  padding: 20px;
-}
-
-.tab {
-  display: none;
-}
-
-.tab.active {
-  display: block;
-}
-
-/* Proje kartları */
-.project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.project-card {
-  background-color: #222;
-  border: 1px solid #444;
-  border-radius: 5px;
-  width: 300px;
-  padding: 15px;
-  text-align: center;
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 10px;
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 10px;
+    margin-top: 30px;
 }
