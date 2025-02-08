@@ -132,3 +132,8 @@ section button {
 section button:hover {
     background-color: #45a049;
 }
+
+/* Hide Other Sections */
+section:not(:first-child) {
+    display: none;
+}
