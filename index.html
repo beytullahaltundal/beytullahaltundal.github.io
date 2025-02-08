@@ -3,59 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpektraHex - Software Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Spektrumhex - A Hexadecimal Communication System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="container">
-            <img src="images/logo.png" alt="SpektraHex Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="logo.png" alt="Spektrumhex Logo" class="logo-img">
+            <h1>Spektrumhex</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="home">
-        <div class="hero">
-            <h1>Welcome to SpektraHex</h1>
-            <p>Innovating the Future of Software Development</p>
+    <!-- Hero Section (Code Screen Effect) -->
+    <section class="hero">
+        <div class="code-screen">
+            <pre><code class="code-output"></code></pre>
         </div>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>SpektraHex is a hub for software developers, offering resources, projects, and networking opportunities.</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Spektrumhex</h2>
+        <p>Spektrumhex is a cutting-edge communication system based on hexadecimal encoding. It bridges the gap between modern technology and legacy systems by utilizing efficient and secure transmission of data. This project integrates hexadecimal coding with real-time data visualization, perfect for IoT, security systems, and more.</p>
+        <img src="hex-graphic.png" alt="Hexadecimal Communication" class="section-image">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-links">
+            <a href="project1.html" class="project-link">
+                <img src="project1-thumb.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+            </a>
+            <a href="project2.html" class="project-link">
+                <img src="project2-thumb.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+            </a>
+            <a href="project3.html" class="project-link">
+                <img src="project3-thumb.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+            </a>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Our Projects</h2>
-            <div class="project">
-                <img src="images/project1.jpg" alt="Project 1">
-                <p>Project One: AI-Powered Code Analyzer</p>
-            </div>
-            <div class="project">
-                <img src="images/project2.jpg" alt="Project 2">
-                <p>Project Two: Blockchain Secure Messaging</p>
-            </div>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>If you are interested in learning more about Spektrumhex or collaborating on projects, feel free to reach out.</p>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Email: contact@spektrahex.me</p>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Spektrumhex. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
