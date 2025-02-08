@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpaceTech Software</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Universe</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>🚀 SpaceTech Software</h1>
-        <p>Innovative software solutions from the cosmos!</p>
-    </header>
+  <!-- Navigasyon Menüsü -->
+  <nav>
+    <ul class="nav-tabs">
+      <li data-tab="home" class="active">Home</li>
+      <li data-tab="projects">Projects</li>
+      <li data-tab="contact">Contact</li>
+    </ul>
+  </nav>
 
-    <section class="about">
-        <h2>About Us</h2>
-        <p>We develop cutting-edge software inspired by space technology.</p>
+  <!-- Sekmeli İçerik Alanı -->
+  <div class="tab-content">
+    <!-- Home Bölümü -->
+    <section id="home" class="tab active">
+      <h1>Welcome to Software Universe</h1>
+      <p>Your gateway to innovative software solutions.</p>
+      <img src="https://via.placeholder.com/800x300/000000/ffffff?text=Welcome+to+Software+Universe" alt="Welcome Image">
     </section>
 
-    <section class="projects">
-        <h2>Our Projects</h2>
+    <!-- Projects Bölümü -->
+    <section id="projects" class="tab">
+      <h1>Our Projects</h1>
+      <p>Discover our cutting-edge projects below:</p>
+      <div class="project-cards">
         <div class="project-card">
-            <h3>🛰️ AstroAI</h3>
-            <p>An AI-based navigation system for space missions.</p>
+          <img src="https://via.placeholder.com/300x200/000000/ffffff?text=Project+One" alt="Project One">
+          <h2>Project One</h2>
+          <p>A revolutionary software solution for modern problems.</p>
         </div>
         <div class="project-card">
-            <h3>🌌 Nebula OS</h3>
-            <p>A secure operating system for space exploration.</p>
+          <img src="https://via.placeholder.com/300x200/000000/ffffff?text=Project+Two" alt="Project Two">
+          <h2>Project Two</h2>
+          <p>Innovative approaches to enhance your digital experience.</p>
         </div>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2025 SpaceTech Software. All rights reserved.</p>
-    </footer>
+    <!-- Contact Bölümü -->
+    <section id="contact" class="tab">
+      <h1>Contact Us</h1>
+      <p>Feel free to reach out for collaboration or inquiries.</p>
+      <p>Email: info@softwareuniverse.com</p>
+    </section>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
