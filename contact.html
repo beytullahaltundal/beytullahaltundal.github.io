@@ -3,42 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Spektrumhex</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Contact | SpektrumHex</title>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Spektrumhex Logo">
-            <h1>Spektrumhex - Contact</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="home-link">Home</a></li>
-                <li><a href="about.html" target="_blank">About</a></li>
-                <li><a href="projects.html" target="_blank">Projects</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h2>Contact Us</h2>
-        <p class="hero-text">We'd love to hear from you! Reach out to us with any questions or feedback.</p>
-    </section>
+<header>
+    <div class="logo"><img src="assets/logo.png" alt="SpektrumHex Logo"></div>
+    <h1>SpektrumHex</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="contact-form">
-        <form action="submit_form.php" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
-    <footer>
-        <p>&copy; 2025 Spektrumhex. All Rights Reserved.</p>
-    </footer>
+<footer>
+    <p>SpektrumHex © 2025. All rights reserved.</p>
+</footer>
+
+<script src="js/contact.js"></script>
 </body>
 </html>
